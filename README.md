@@ -143,3 +143,16 @@ git push -u origin main
 ## Example Artifact (Output)
 
 ![Word Cloud Example](docs/images/word_cloud_example.png)
+
+## Technical Modification
+
+### What I Changed
+I created my own versions of the example files by copying the original data file, script, and notebook and renaming `_case` to `_sandra`.
+
+In my modified script, I changed the input file to `text_data_sandra.txt`, expanded the stop word list to remove additional common words such as `text`, `data`, and `language`, added a new summary value for unique cleaned tokens, and increased the bar chart output from the top 10 tokens to the top 15 tokens.
+
+### Why I Made This Change
+I made these changes to better understand how preprocessing choices affect the final token frequencies and visualizations. Expanding the stop word list and showing more frequent tokens helped me observe how filtering decisions shape the analysis results.
+
+### What I Observed
+After running the modified project, the output changed noticeably. Common words such as `text`, `data`, and `language` no longer dominated the frequency table, the chart displayed more tokens, and the unique token count provided a clearer summary of the cleaned dataset.
