@@ -144,15 +144,39 @@ git push -u origin main
 
 ![Word Cloud Example](docs/images/word_cloud_example.png)
 
-## Technical Modification
 
-### What I Changed
-I created my own versions of the example files by copying the original data file, script, and notebook and renaming `_case` to `_sandra`.
+# My Project Modifications
 
-In my modified script, I changed the input file to `text_data_sandra.txt`, expanded the stop word list to remove additional common words such as `text`, `data`, and `language`, added a new summary value for unique cleaned tokens, and increased the bar chart output from the top 10 tokens to the top 15 tokens.
+To make this project my own, I made several small modifications to the example text preprocessing workflow.
 
-### Why I Made This Change
-I made these changes to better understand how preprocessing choices affect the final token frequencies and visualizations. Expanding the stop word list and showing more frequent tokens helped me observe how filtering decisions shape the analysis results.
+---
 
-### What I Observed
-After running the modified project, the output changed noticeably. Common words such as `text`, `data`, and `language` no longer dominated the frequency table, the chart displayed more tokens, and the unique token count provided a clearer summary of the cleaned dataset.
+## 1. Updated input text
+
+- I replaced the example text file with `text_data_sandra.txt`, which contains my own sample text to demonstrate preprocessing.
+
+---
+
+## 2. Expanded stop word list
+
+- I added additional stop words such as `text`, `data`, and `language` to reduce noise and focus on more meaningful tokens.
+
+---
+
+## 3. Added unique token count feature
+
+- I created a new feature that calculates the number of unique cleaned tokens after preprocessing, giving more insight into the diversity of the text.
+
+---
+
+## 4. Modified visualization output
+
+- I changed the bar chart to display the **top 15 most frequent cleaned tokens** instead of the top 10, providing a broader view of the data.
+
+---
+
+## 5. Observations
+
+- After running the notebook with my changes, I observed that the number of tokens decreased after removing additional stop words.
+- Common words such as `text`, `data`, and `language` no longer dominated the results.
+- The updated chart provided a clearer view of meaningful tokens and improved the overall readability of the analysis.
